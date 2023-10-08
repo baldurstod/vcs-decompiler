@@ -1,0 +1,11 @@
+{
+	"name": "vcs-decompiler",
+	"version": "0.0.1",
+	"main": "index.js",
+	"dependencies": {
+		"harmony-binary-reader": "github:baldurstod/harmony-binary-reader"
+	},
+	"devDependencies": {
+		"@rollup/plugin-node-resolve": "^15.2.2"
+	}
+}

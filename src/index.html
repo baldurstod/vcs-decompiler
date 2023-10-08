@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html><head>
+</head>
+<body>
+	<script type="module">
+		import { loadFile } from '../dist/index.js';
+		const htmlFile = document.createElement('input');
+		htmlFile.type = 'file';
+		htmlFile.addEventListener('change', event => fileChanged(event));
+		document.body.append(htmlFile);
+
+
+		function fileChanged(event) {
+
+			for (const file of event.target.files) {
+				loadFile(file);
+			}
+		}
+
+	</script>
+</body>
+</html>
